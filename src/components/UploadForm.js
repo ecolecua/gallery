@@ -20,6 +20,7 @@ const UploadForm = () => {
       const imageRef = ref(storage, `images/${selected.name + v4()}`);
       uploadBytes(imageRef, selected).then(() => {
         alert('Image Uploaded!');
+        window.location.reload();
       });
     } else {
       setFile(null);
@@ -29,13 +30,23 @@ const UploadForm = () => {
 
   return (
     <form>
-      <label htmlFor="">
-        <input type="file" onChange={changeHandler} />
-        <span>+</span>
+      <label htmlFor="upload-photo">
+        <input
+          style={{ display: 'none' }}
+          type="file"
+          id="upload-photo"
+          onChange={changeHandler}
+        />
+        <div width="auto" style={{ cursor: 'pointer' }}>
+          <img
+            src="https://cdn.picpng.com/icon/upload-files-icon-66764.png"
+            alt=""
+            width={'100'}
+          />
+        </div>
       </label>
       <>
         {error && <div>{error}</div>}
-        {file && <div>{file.name}</div>}
         {/* {file && <ProgressBar file={file} setFile={setFile} />} */}
       </>
     </form>

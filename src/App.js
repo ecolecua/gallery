@@ -26,11 +26,24 @@ function App() {
 
   return (
     <div className="App">
+      <br />
+      <br />
+      <h1> Semana Ambiental </h1>
+      <hr />
+      <p>Publica tu foto y participa en el concurso!</p>
+      <br />
+      <br />
       <UploadForm />
 
-      {removeDuplicates(data).map((url) => {
-        return <img src={url} alt="" />;
-      })}
+      <br />
+      <br />
+      <section class="gallery-container">
+        <div class="gallary">
+          {removeDuplicates(data).map((url) => {
+            return <img src={url} alt="" />;
+          })}
+        </div>
+      </section>
     </div>
   );
 }
