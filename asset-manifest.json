@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/photo-contest/static/css/main.073c9b0a.css",
+    "main.js": "/photo-contest/static/js/main.f94b2bc6.js",
+    "static/js/787.18a61ba9.chunk.js": "/photo-contest/static/js/787.18a61ba9.chunk.js",
+    "index.html": "/photo-contest/index.html",
+    "main.073c9b0a.css.map": "/photo-contest/static/css/main.073c9b0a.css.map",
+    "main.f94b2bc6.js.map": "/photo-contest/static/js/main.f94b2bc6.js.map",
+    "787.18a61ba9.chunk.js.map": "/photo-contest/static/js/787.18a61ba9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.f94b2bc6.js"
+  ]
+}
