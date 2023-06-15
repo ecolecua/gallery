@@ -172,10 +172,8 @@ function App() {
                 <section class="tm-section tm-section-2 mx-auto">
                   <UploadForm />
                   <br />
-                  <br />
-                  <br />
                   <div class="grid gallery tm-gallery">
-                    {removeDuplicates(data).map((url, idx) => {
+                    {data.map((url, idx) => {
                       return (
                         <figure
                           key={`key-${idx}`}
