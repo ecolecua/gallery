@@ -144,7 +144,7 @@ function setupSlider() {
   $('.tm-gallery').slick({
     dots: true,
     customPaging: function (slider, i) {
-      var thumb = $(slider.$slides[i]).data();
+      // var thumb = $(slider.$slides[i]).data();
       return `<a>${i + 1}</a>`;
     },
     infinite: true,

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import $ from 'jquery';
 
 /*
@@ -24,7 +25,7 @@ import $ from 'jquery';
  * THE SOFTWARE.
  */
 
-var currentImageIndex = -1;
+// var currentImageIndex = -1;
 var imageIds = new Array();
 var fadeSpeed;
 

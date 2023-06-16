@@ -20,6 +20,7 @@ const UploadForm = () => {
       const imageRef = ref(storage, `images/${selected.name + v4()}`);
       uploadBytes(imageRef, selected).then(() => {
         alert('Image Uploaded!');
+        console.log(file, 'file');
         window.location.reload();
       });
     } else {

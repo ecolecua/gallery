@@ -1,7 +1,8 @@
+/* eslint-disable */
+
 import UploadForm from './components/UploadForm';
 
 import './App.css';
-import './assets/css/bootstrap.min.css';
 import './assets/css//magnific-popup.css';
 import './assets/css//tooplate-style.css';
 
@@ -16,9 +17,6 @@ import { ref, listAll, getDownloadURL } from 'firebase/storage';
 
 import Logo from './assets/img/logo/logotipo.png';
 import LogoLetter from './assets/img/logo/logo-letter.png';
-
-const DEFAULT_IMAGE =
-  'https://www.adobe.com/express/feature/image/media_16ad2258cac6171d66942b13b8cd4839f0b6be6f3.png?width=750&format=png&optimize=medium';
 
 const dataRef = ref(storage, 'images/');
 
@@ -169,18 +167,18 @@ function App() {
                   </div>
                 </section>
 
-                <section class="tm-section tm-section-2 mx-auto">
+                <section class="gallery-container tm-section tm-section-2 mx-auto">
                   <UploadForm />
                   <br />
                   <div class="grid gallery tm-gallery">
-                    {data.map((url, idx) => {
+                    {removeDuplicates(data).map((url, idx) => {
                       return (
                         <figure
                           key={`key-${idx}`}
                           class="effect-goliath tm-gallery-item"
                         >
                           <img
-                            width={150}
+                            width={200}
                             height={100}
                             src={url}
                             alt={`Img-${idx}`}
