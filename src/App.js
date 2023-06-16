@@ -9,7 +9,7 @@ import './assets/css//tooplate-style.css';
 import './assets/js/background.cycle.js';
 import './assets/slick/slick.min.js';
 import './assets/js/jquery.magnific-popup.min.js';
-import './assets/js/main.js';
+// import './assets/js/main.js';
 
 import { useEffect, useState } from 'react';
 import { storage } from './firebase/config';
