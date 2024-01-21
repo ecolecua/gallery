@@ -29,6 +29,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Photo-contest</h1>
       <div className="grid gallery tm-gallery">
         {removeDuplicates(data).map((url, idx) => {
           return (
